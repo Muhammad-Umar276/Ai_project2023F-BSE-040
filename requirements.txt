@@ -1,0 +1,10 @@
+streamlit
+pytesseract
+opencv-python-headless
+Pillow
+numpy
+PyMuPDF
+python-docx
+sentence-transformers
+nltk
+scikit-learn
