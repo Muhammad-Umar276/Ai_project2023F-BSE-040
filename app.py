@@ -7,6 +7,11 @@ import fitz  # PyMuPDF
 from docx import Document
 from grading import grade_answer
 import io
+import os
+
+if os.name == "nt":  # only for Windows
+    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 
 # ---------- TESSERACT PATH ----------
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
